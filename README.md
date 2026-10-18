@@ -46,7 +46,7 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 .\tools\build.ps1
 ```
 
-当前本地构建在 Windows 验证，Linux 路径仍需 CI 验证。脚本不会修改系统代理、防火墙或共享设置。
+本地 Windows 与 GitHub Ubuntu CI 均已通过构建、单元测试和 lint；EndeavourOS 本机尚未实测。脚本不会修改系统代理、防火墙或共享设置。
 
 ### Release
 

@@ -26,3 +26,7 @@ Status: public preview 0.3.1, 2026-10-18. Build success is not a claim of univer
 ## Reproduce
 
 Run `./gradlew testDebugUnitTest lintDebug assembleDebug`. Optional integration tests use the isolated test server under `tools/smb_test_server.py`; inspect each test for its environment variables. Do not use production credentials in committed files. Instrumentation test APKs are developer tools and are not distributed as the app.
+
+## Linux CI
+
+GitHub-hosted Ubuntu completed `testDebugUnitTest lintDebug assembleDebug` successfully: [verified workflow run](https://github.com/Cand1ePower/ezSMB/actions/runs/39106378062). This checks a clean Linux build; it is not a physical-device test or an EndeavourOS-specific validation.
