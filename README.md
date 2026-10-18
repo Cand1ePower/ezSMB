@@ -58,6 +58,8 @@ Release APK：`app/build/outputs/apk/release/app-release.apk`。Play AAB：`app/
 
 使用 SMBJ 0.14.0 + Rapid7 DCE/RPC 0.12.13 实现一套 SMB 传输引擎与服务器共享枚举。详见 [架构](docs/public/architecture.md)、[测试与已知限制](docs/public/testing.md)、[商店准备材料](docs/public/store-readiness.md)。
 
+维护者提交应用商店时可使用 [上架操作清单](store/USER_CHECKLIST.md)、[声明填写稿](store/review/declarations.md) 和 [审核复现步骤](store/review/reviewer-instructions.md)。商店图标与宣传图在 `store/assets/`，中英文文案在 `store/text/`。
+
 不支持断点续传。视频预览是关键帧，不是播放器。文件夹封面只检查有限数量的直接子文件。NAS、强制加密、域/DFS 等兼容性尚未完成全面验证。DHCP 地址改变可按服务器 GUID 更新，但服务器重启可能改变 GUID，需要重新关联收藏；路由器地址保留可减少此问题。
 
 ## English

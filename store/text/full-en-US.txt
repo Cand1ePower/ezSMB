@@ -1,0 +1,12 @@
+ezSMB is a native Android client for SMB2/SMB3 file shares. Connect your phone to a reachable local network, open a computer or NAS share, download files, or upload documents selected through Android's system picker. Your computer uses its existing SMB service; no companion application is required.
+
+Discover local devices, remember frequently used servers and enumerate shared folders. If automatic discovery or enumeration is restricted, enter the server address and share path manually. Saved credentials are encrypted locally with Android Keystore. Anonymous access is offered only when a readable anonymous share is detected.
+
+Preview images, video frames and folder covers, and bookmark directories for quick access from Home. Downloads go to Download/ezSMB. The transfer queue displays actual byte counts, progress and failures, with cancellation and retry.
+
+The interface uses Jetpack Compose and Material 3 with dynamic colors and dark mode. There are no ads, analytics SDKs or developer cloud accounts. Files are transferred directly between your phone and the server you choose.
+
+Requires Android 10 or later and an accessible SMB2/SMB3 server. This is a public preview. Not all NAS devices, security policies or media formats have been verified. Previews have bounded read budgets. Resumable transfers are not supported; retry starts from the beginning.
+
+Help: https://ezsmb.candlepower.cool/guide/
+Contact: candlepower1112@gmail.com
