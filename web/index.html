@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ezSMB：在 Android 手机上访问电脑的共享文件夹</title>
+<meta name="description" content="CandlePower 的开源 Android SMB 工具。连接局域网电脑与 NAS，浏览共享文件夹、预览图片视频、上传下载，支持目录收藏。">
+<link rel="canonical" href="https://ezsmb.candlepower.cool/">
+<meta property="og:title" content="ezSMB：在手机上打开电脑的共享文件夹">
+<meta property="og:description" content="一个开源 Android SMB 工具。支持局域网发现、文件预览、上传下载和目录收藏。">
+<meta property="og:url" content="https://ezsmb.candlepower.cool/"><meta property="og:type" content="website">
+<meta property="og:image" content="https://ezsmb.candlepower.cool/icon.svg">
+<meta name="theme-color" content="#f9f8f5"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css?v=2">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ezSMB","operatingSystem":"Android 10+","applicationCategory":"UtilitiesApplication","softwareVersion":"0.3.1","description":"Open-source native Android SMB2/SMB3 client for local network file browsing and transfer.","url":"https://ezsmb.candlepower.cool/","downloadUrl":"https://github.com/Cand1ePower/ezSMB/releases/tag/v0.3.1","license":"https://github.com/Cand1ePower/ezSMB/blob/main/LICENSE","author":{"@type":"Person","name":"CandlePower"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header><a class="brand" href="/"><img src="/icon.svg" alt="">ezSMB</a><nav aria-label="主导航"><a href="/guide/">连接指南</a><a class="desktop" href="/privacy/">隐私政策</a><a href="https://github.com/Cand1ePower/ezSMB">GitHub</a></nav></header>
+<main id="main">
+<div class="intro">
+<div><div class="product-name" aria-hidden="true">ezSMB</div><h1>在手机上打开<br>电脑的共享文件夹。</h1><p>电脑已经开了共享，手机就应该能直接访问。ezSMB 是一个 Android 小工具，用来找局域网里的电脑、浏览文件，以及上传和下载。</p><p>Windows 共享、Samba 和 NAS 都使用 SMB 协议。电脑端不用再装一个配套程序。</p><div class="actions"><a class="button" href="/downloads/ezsmb-0.3.1.apk">下载 APK</a><a href="/guide/">第一次用？先设置共享</a></div><p class="byline">CandlePower 的开源项目 · MIT 许可证</p></div>
+<aside class="release" aria-label="当前版本"><h2>0.3.1 公开预览版</h2><p>这次加上了文件夹封面。收藏里的长路径也收短了，首页看起来清楚一些。</p><dl><dt>系统</dt><dd>Android 10 及以上</dd><dt>安装包</dt><dd>31.3 MiB</dd><dt>价格</dt><dd>免费</dd></dl><p><a href="https://github.com/Cand1ePower/ezSMB/releases/tag/v0.3.1">更新说明与校验值</a></p><p class="small">应用商店还在准备，目前从这里或 GitHub 下载。</p></aside>
+</div>
+<section class="section-row" id="features"><div class="section-label"><h2>日常怎么用</h2><p>手机和电脑需要在可互访的局域网里。</p></div><div class="body-copy"><dl class="use-list"><div><dt>打开，找电脑</dt><dd>首页自动查找 SMB 设备，也会记住连接过的电脑。点设备后用电脑账户登录；允许匿名访问的共享会出现匿名入口。</dd></div><div><dt>进文件夹</dt><dd>连上后列出共享目录。图片和视频可以看缩略图，文件夹也会尝试用里面的媒体做封面。经常用的目录可以收藏到首页。</dd></div><div><dt>点文件下载</dt><dd>下载进度在底部显示，完成后可以打开文件或所在目录。要往电脑传文件，就在目标目录点「上传」，用系统选择器选文件。</dd></div></dl><div class="location"><span>下载保存到</span><code>内部存储 / Download / ezSMB</code></div><p class="small">原生 Kotlin + Compose，支持 Material You 动态配色和深色模式。没有广告、统计 SDK 或云账户；文件直接在你的设备之间传输。</p></div></section>
+<section class="section-row"><div class="section-label"><h2>最近改了什么</h2><p>从实际使用中遇到的问题开始改。</p></div><div class="body-copy"><article class="change"><h3>文件夹也能看封面 <span>0.3.1</span></h3><p>从当前目录里的图片或视频取一张预览。找不到合适的媒体，就保留文件夹图标。首页收藏的路径改成小字，太长的部分省略。</p></article><article class="change"><h3>返回上一级，收藏常用目录 <span>0.3.0</span></h3><p>点设备先进入共享列表。系统返回手势逐层往回走，收藏则可以从首页直达指定目录。IP 变化后，能按相同服务器标识更新地址。</p></article><article class="change"><h3>预览文件，找到下载位置 <span>0.2.x</span></h3><p>增加电脑名称、图片和视频关键帧预览。下载统一放进 ezSMB 文件夹，完成的任务可以打开所在目录。</p></article></div></section>
+<section class="section-row"><div class="section-label"><h2>还在完善的地方</h2></div><div class="body-copy"><p>目前在 vivo / Android 16 上做过实际操作测试，也连过 Windows 共享。不同 NAS、Samba 配置和强制加密策略还需要更多验证。</p><p>传输中断后要从头重试，暂时没有断点续传。预览有大小和读取时间限制，有些视频不会显示封面。文件夹封面只看有限数量的直接子文件，不会一路扫描下去。</p><p>如果你遇到问题，请附上手机型号、Android 版本、服务器类型和复现步骤。密码和私人文件就不要发了。</p><p><a href="https://github.com/Cand1ePower/ezSMB/issues">提交问题</a> &nbsp; / &nbsp; <a href="https://github.com/Cand1ePower/ezSMB/blob/main/docs/public/testing.md">查看测试范围</a></p></div></section>
+<section class="section-row"><div class="section-label"><h2>连接时容易卡住的地方</h2></div><div class="body-copy"><div class="help-item"><h3>没有找到电脑</h3><p>先看电脑是否休眠、文件共享是否开启。访客 Wi-Fi 或 AP 隔离会让设备彼此不可见。可以在「手动连接」里输入电脑 IP 试一次。</p><a href="/guide/">Windows 共享设置和连接排查</a></div><div class="help-item"><h3>用户名密码没错，还是登录失败</h3><p>Windows Hello PIN 不是账户密码。共享权限和文件夹的安全权限也都要允许这个账户访问。不要为了连接关闭防火墙或 SMB 签名。</p></div><div class="help-item"><h3>电脑重启，地址变了</h3><p>相同服务器标识可以帮助找回新 IP，但服务器重启也可能改变标识。这时重新关联收藏即可。长期使用，建议在路由器上给电脑保留一个 DHCP 地址。</p></div></div></section>
+<section class="section-row"><div class="section-label"><h2>下载与源码</h2></div><div class="body-copy"><p>安装包只包含 ezSMB。国内商店和 Google Play 尚未上架，后续版本会发布在 GitHub。</p><div class="actions"><a class="button" href="/downloads/ezsmb-0.3.1.apk">下载 0.3.1</a><a href="https://github.com/Cand1ePower/ezSMB">查看源码</a></div><p class="small" style="margin-top:20px">之前装过开发 Debug 版？公开版的签名不同，不能直接覆盖安装。请先看发布说明，避免丢失已保存的配置。</p><p lang="en" class="small">An open-source Android SMB client for browsing local network shares and transferring files. Built by CandlePower.</p></div></section>
+</main><footer><span>© 2026 CandlePower</span><a href="/privacy/">隐私政策</a><a href="mailto:candlepower1112@gmail.com">candlepower1112@gmail.com</a><a href="https://github.com/Cand1ePower/ezSMB">GitHub</a></footer>
+</body></html>

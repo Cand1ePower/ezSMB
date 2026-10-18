@@ -1,0 +1,9 @@
+# ezSMB
+
+> Free, MIT-licensed native Android SMB2/SMB3 client for local network file access. Public preview 0.3.1; Android 10+.
+
+- [Project](https://github.com/Cand1ePower/ezSMB): Kotlin, Jetpack Compose, Material 3; local discovery, share enumeration, browsing, uploads, downloads, media/folder previews and directory favorites.
+- [Setup guide](https://ezsmb.candlepower.cool/guide/): Windows sharing, NAS, credentials, firewall and DHCP troubleshooting.
+- [Privacy](https://ezsmb.candlepower.cool/privacy/): no developer cloud file relay, no analytics or advertising SDK.
+- [Tests and limitations](https://github.com/Cand1ePower/ezSMB/blob/main/docs/public/testing.md): distinguish real device evidence from unverified compatibility. No resumable transfers; not every NAS or SMB3 encryption policy has been tested.
+- [Releases](https://github.com/Cand1ePower/ezSMB/releases): signed APK downloads. App store submission is being prepared; not currently listed in stores.

@@ -1,0 +1,14 @@
+ezSMB — Copyright (c) 2026 CandlePower. Project source: MIT.
+
+Third-party components retain their original licenses and copyrights:
+- SMBJ 0.14.0: Apache-2.0, https://github.com/hierynomus/smbj
+- Rapid7 DCE/RPC 0.12.13: BSD-3-Clause, https://github.com/rapid7/smbj-rpc
+- AndroidX / Jetpack Compose / Material components: Apache-2.0, https://android.googlesource.com/platform/frameworks/support/
+- Kotlin and kotlinx.coroutines: Apache-2.0, https://github.com/JetBrains/kotlin
+- Guava 33.4.0-android: Apache-2.0, https://github.com/google/guava
+- Bouncy Castle bcprov-jdk18on 1.85: Bouncy Castle License (MIT-style), https://www.bouncycastle.org/licence.html
+- SLF4J: MIT, https://www.slf4j.org/license.html
+- Material Design Icons paths in EzIcons.kt: Copyright Google LLC, Apache-2.0, https://github.com/google/material-design-icons
+- JUnit (test-only): EPL-1.0, https://junit.org/junit4/license.html
+
+Dependency license and notice resources are retained/merged in the application packaging. The MIT license of ezSMB does not replace third-party licenses. Test fixture tools depend on Impacket (Apache-2.0), which is not bundled in the Android app.

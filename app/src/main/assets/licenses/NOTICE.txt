@@ -1,0 +1,13 @@
+ezSMB uses open source software:
+
+Kotlin, Jetpack Compose, AndroidX, Guava and SMBJ: Apache License 2.0.
+The Apache 2.0 license text is included in Material-Icons-LICENSE.txt.
+SMBJ: Copyright (C) 2013 hierynomus. See SMBJ-NOTICE.txt.
+Material Design Icons: Google LLC. Only the vectors used in the UI are included.
+SMBJ-RPC / dcerpc: Rapid7, BSD-3-Clause. See SMBJ-RPC-LICENSE.txt.
+Bouncy Castle: The Legion of the Bouncy Castle Inc., MIT-style license.
+See BouncyCastle-LICENSE.html.
+Additional dependency license/notice resources are retained/merged under META-INF.
+
+Source locations and exact direct dependency versions are recorded in
+app/build.gradle.kts and docs/SMB_ENGINE_DECISION.md in the source distribution.
