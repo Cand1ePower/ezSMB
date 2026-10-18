@@ -5,7 +5,7 @@ Status: public preview 0.3.1, 2026-10-18. Build success is not a claim of univer
 ## Verified
 
 - Debug APK, signed Release APK and signed Release AAB generated using the Gradle wrapper, AGP 8.11.1, Kotlin 2.1.20 and JDK 21. Final build command: `assembleRelease bundleRelease assembleDebug testDebugUnitTest lintDebug`.
-- JVM suite: 34 tests, 30 passed, 4 skipped because optional SMB integration server/environment settings were absent; zero failures. Lint: zero errors, 21 warnings.
+- JVM suite: 34 tests, 30 passed, 4 skipped because optional SMB integration server/environment settings were absent; zero failures. Lint: zero errors, 22 warnings.
 - Vivo Android 16: Debug installation and real Windows share discovery, authenticated share enumeration and navigation. System Back and edge Back return one folder level, then shares, then Home. Directory favorite creation, direct entry and removal were checked.
 - Real Android instrumentation over TCP/SMB2 via an independent loopback fixture: JPEG and MP4 decode, media cache hits, image and video folder covers, empty/nested-only folder fallback. This is a protocol test fixture, not proof of Samba/NAS interoperability.
 - Favorite persistence and identity rules were tested on Android with synthetic address-metadata changes. This does not count as a real DHCP lease-change test.
