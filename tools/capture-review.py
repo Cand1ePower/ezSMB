@@ -17,7 +17,8 @@ serial = args.serial or (authorized[0] if len(authorized) == 1 else None)
 if serial not in authorized:
     parser.error('Connect and authorize one device, or specify --serial.')
 command = [args.adb, '-s', serial]
-windows = subprocess.check_output(command + ['shell', 'dumpsys', 'window', 'windows'], text=True)
+# Android 16 may omit mCurrentFocus from the "windows" subcommand.
+windows = subprocess.check_output(command + ['shell', 'dumpsys', 'window'], text=True)
 focus = [line for line in windows.splitlines() if 'mCurrentFocus=' in line]
 if not focus or 'com.ezsmb.app/' not in focus[0]:
     sys.exit('ezSMB is not the focused app. Open the intended ezSMB screen first.')
